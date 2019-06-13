@@ -83,7 +83,7 @@ body
 .fa-shopping-basket{
 	margin-right:5px;
 }
-@media only screen and(max-width:980px)
+@media screen and(max-width:980px)
 {
 	.topbar
 	{
@@ -157,7 +157,7 @@ body
 	color:blue;
 	display:none;
 }
-@media only screen and(max-width:980px)
+@media screen and(max-width:980px)
 {
 	.slidemenu{
 		width:34%;
