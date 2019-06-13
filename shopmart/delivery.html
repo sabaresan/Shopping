@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>shopmart</title>
+<meta content="utf-8">
+<link rel="stylesheet"type="text/css"href="css/style.css">
+<link rel="stylesheet"
+href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<div class="h"
+<h3><u><b><strong><  ESAN MART  ></strong></b></u>
+</h3>
+</div>
+<div class="topbar">
+<div class="searchbox">
+
+<img src="img/em.jpeg" class="logo">
+<input type="text"class="form-control">
+<span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i>
+</span>
+</div>
+<div class="menubar">
+<ul>
+<li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i>
+cart</a></li>
+<li><a href="#">Sign Up</a></li>
+<li><a href="#">Login</a></li>
+
+</ul>
+</div>
+</div>
+<script LANGUAGE="JavaScript" type="text/javascript">
+function display() {
+  DispWin = window.open('','NewWin', 'toolbar=no,status=no,width=300,height=200')
+  message="<ul><b>DELIVERY DETAILS: </b>";
+  message += "<ul><li><b>CUSTOMER NAME: </b>" + document.form1.yourname.value;
+  message += "<li><b>EMAIL ID: </b>" + document.form1.emailid.value;
+  message += "<li><b>ADDRESS: </b>" + document.form1.address.value;
+  message += "<li><b>PHONE NUMBER: </b>" + document.form1.phone.value;
+  message += "<ul><i>....Thanks for Ordering....</i>"  + "</ul>";
+  DispWin.document.write(message);
+}
+</script>
+</head>
+<style>
+form{
+width:1000px;
+margin:auto;
+padding:20px;
+background:#f49842;
+font-size:20px;
+font-family:verdana;
+color:white;
+border-radius:circle;
+}
+input[type=text}{
+width:80%;
+padding:5px;
+font-size:18px;
+}
+input[type =proceed]{
+padding:5px;
+font-size:20px;
+width:100px;
+}
+select{
+font-size:20px;
+padding:5px;
+background:#e0d3e8;
+}
+</style>
+<body>
+<h1><b>DELIVERY DETAILS:</b></h1>
+<form name="form1">
+<p><b>Customer Name:</b> <input TYPE="TEXT" SIZE="30" NAME="yourname">
+</p>
+<p><b>EmailID:</b> <input TYPE="TEXT" SIZE="30" NAME="emailid">
+</p>
+<p><b>Address:</b> <input TYPE="TEXT" SIZE="30" NAME="address">
+</p>
+<p><b>Phone Number : </b> <input TYPE="TEXT" SIZE="30" NAME="phone">
+</p>
+<p><input TYPE="BUTTON" VALUE="PROCEED" onClick="display();"></p>
+</form>
+</body>
+</html>
