@@ -369,4 +369,15 @@ z-index:1;
 	box-sizing:bolder-box;
 	font-size:14px;
 }
-
+@media screen and (max-width:980px)
+{
+	.login
+	{
+		width:180px;
+		border-bottom:0;
+	}
+	.form input{
+        width:180px;
+        border-bottom:0;		
+	}
+}
