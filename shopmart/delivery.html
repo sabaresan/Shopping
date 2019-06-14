@@ -31,12 +31,14 @@ cart</a></li>
 <script LANGUAGE="JavaScript" type="text/javascript">
 function display() {
   DispWin = window.open('','NewWin', 'toolbar=no,status=no,width=300,height=200')
-  message="<ul><b>DELIVERY DETAILS: </b>";
+  message="<ul><b><u><center>< ESAN MART ></center></u></b>";
+  message +="<ul><b>DELIVERY DETAILS: </b>";
   message += "<ul><li><b>CUSTOMER NAME: </b>" + document.form1.yourname.value;
   message += "<li><b>EMAIL ID: </b>" + document.form1.emailid.value;
   message += "<li><b>ADDRESS: </b>" + document.form1.address.value;
   message += "<li><b>PHONE NUMBER: </b>" + document.form1.phone.value;
-  message += "<ul><i>....Thanks for Ordering....</i>"  + "</ul>";
+  message += "<ul><i><center>....Thanks for Ordering....</center></i>";
+  message += "<ul><i>->>>Your Order will be delivered within 3days<<<-</i>"  + "</ul>";
   DispWin.document.write(message);
   DispWin.document.body.style.background="#42f4ee";
 }
